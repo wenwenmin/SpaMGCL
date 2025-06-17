@@ -1,0 +1,32 @@
+# Model Settings
+model: "clustering"  # The model name used; SpaMGCL is a spatial-gene expression joint model
+top_genes: 3000  # The top 3000 genes selected from the data, used for subsequent analysis
+genes_model: "pca"  # Gene modeling method used; here PCA (Principal Component Analysis) is chosen
+rad_cutoff: None  # Radius threshold used for spatial network calculation, controlling the connection range between spatial nodes
+k_cutoff: 18  # K value for KNN graph, indicating the number of neighbors for each node in graph construction
+graph_model: "KNN"  # Method for spatial graph construction; here KNN (K-Nearest Neighbors) is used
+lam: 0.6  # A hyperparameter, possibly used to balance different loss components
+seed: 0  # Random seed for reproducibility
+
+# Training Settings
+learning_rate: 0.001  # Learning rate for model training, controls the step size of each update
+weight_decay: 3e-4  # Weight decay rate (L2 regularization), helps reduce overfitting
+max_epoch: 60  # Maximum number of training epochs, representing the maximum number of iterations during training
+feat_mask_rate: 0.4  # Feature masking rate, determines the proportion of features randomly masked during training
+
+# Model Architecture
+hidden_dim: 128  # Dimension of hidden layer, the size of intermediate layers in neural networks
+latent_dim: 64  # Latent space dimension, usually related to generative models
+projection_dim: 32  # Dimension of projection layer, used to project features into a lower-dimensional space
+
+# Regularization & Other Parameters
+bn: true  # Whether to use Batch Normalization, helps accelerate training and improve model stability
+att_dropout_rate: 0.2  # Dropout rate in attention mechanism, prevents overfitting
+use_token: true  # Whether to use token mechanism, possibly refers to using spatial or gene information for feature encoding
+alpha: 2.0  # A hyperparameter, possibly related to loss function or model adjustment, typically used to control balance
+
+# Clustering Settings
+num_clusters: 20  # Number of clusters, determines how many groups the data will be divided into (e.g., gene expression clusters)
+num_heads: 4  # Number of attention heads, refers to the number of parallel heads in multi-head attention mechanisms
+
+gradient_clipping: 5  # Gradient clipping threshold, used to prevent exploding gradients during training
