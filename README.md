@@ -14,8 +14,10 @@ To address this challenge, we propose SpaMGCL (Spatial Masked Graph Contrastive 
 
 ## Data
 
- - All the datasets used in this paper can be downloaded from url：https://zenodo.org/records/15675248.
+ - All the datasets used in this paper can be downloaded from URL：https://zenodo.org/records/15675248.
 
+## Results
+ - The experimental results of all baseline models (BaseLine) in this paper across various datasets can be downloaded from the following URL: https://zenodo.org/records/15675248.
 ## Running demo
 
 ​	We can start the training process by running the Run.py file, and the training results can be read and visualized in the DLPFC_Plot.ipynb file.
