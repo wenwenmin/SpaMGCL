@@ -40,7 +40,7 @@ To address this challenge, we propose SpaMGCL (Spatial Masked Graph Contrastive 
 
 ## Contact details
 
-​	If you have any questions, please contact 2810127527@qq.com.
+​	If you have any questions, please contact 2810127527@qq.com and minwenwen@ynu.edu.cn.
 
 
 
